@@ -1,0 +1,45 @@
+#loader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #13233f 0%, #0a0f1d 40%, #05070d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-box {
+  text-align: center;
+}
+
+.loader-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.loader-box p {
+  color: #ffd700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.diamond-spin {
+  font-size: 4rem;
+  color: #ffd700;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  animation: spinDiamond 2s linear infinite;
+}
+
+@keyframes spinDiamond {
+  from { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  to { transform: rotate(360deg) scale(1); }
+}
