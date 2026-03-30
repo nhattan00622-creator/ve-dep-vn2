@@ -1,0 +1,36 @@
+.cursor-glow {
+  position: fixed;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255,215,0,0.18), transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  mix-blend-mode: screen;
+}
+
+.place-card,
+.glass-card,
+.culture-card,
+.cta-box,
+.contact-box,
+.stat-card,
+.quote-box,
+.gallery-item,
+.slide-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.place-card:hover,
+.glass-card:hover,
+.culture-card:hover,
+.cta-box:hover,
+.contact-box:hover,
+.stat-card:hover,
+.quote-box:hover,
+.gallery-item:hover,
+.slide-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(255, 215, 0, 0.12);
+}
